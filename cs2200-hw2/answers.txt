@@ -1,0 +1,16 @@
+CS 2200 Summer 2021
+Homework 2
+
+Name: Nandha Sundaravadivel
+GT Username: nsundara3
+
+Question 1
+----------
+
+The JALR direction can be emulated with three other instructions in the ISA. 
+The first step of JALR saves the PC address inside the $ra register. This 
+can be  remade by using LEA with the desination register as $ra and the label 
+as the number literal 0. This saves the PC to $at. The next step would be to use
+BGE or BLE using $zero and SR1 and SR2 to instruct the program to do an unconditional
+jump to the value at the destination register. LEA can be used before this to set 
+the value of the destination register to the PC to be offset to.  
