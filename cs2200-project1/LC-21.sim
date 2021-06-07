@@ -18,6 +18,36 @@
         },
         {
           "name": "com.ra4king.circuitsim.gui.peers.wiring.Tunnel",
+          "x": 19,
+          "y": 62,
+          "properties": {
+            "Label": "LdCmp",
+            "Direction": "EAST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.Tunnel",
+          "x": 41,
+          "y": 71,
+          "properties": {
+            "Label": "LdMAR",
+            "Direction": "WEST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.Tunnel",
+          "x": 35,
+          "y": 68,
+          "properties": {
+            "Label": "LdCmp",
+            "Direction": "WEST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.Tunnel",
           "x": 24,
           "y": 32,
           "properties": {
@@ -33,6 +63,26 @@
           "properties": {
             "Label": "LdB",
             "Direction": "NORTH",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.Tunnel",
+          "x": 35,
+          "y": 66,
+          "properties": {
+            "Label": "WrMEM",
+            "Direction": "WEST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.Tunnel",
+          "x": 41,
+          "y": 67,
+          "properties": {
+            "Label": "WrREG",
+            "Direction": "WEST",
             "Bitsize": "1"
           }
         },
@@ -58,11 +108,121 @@
         },
         {
           "name": "com.ra4king.circuitsim.gui.peers.wiring.Tunnel",
+          "x": 35,
+          "y": 70,
+          "properties": {
+            "Label": "LdA",
+            "Direction": "WEST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.Tunnel",
+          "x": 39,
+          "y": 69,
+          "properties": {
+            "Label": "LdB",
+            "Direction": "WEST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.Tunnel",
           "x": 78,
           "y": 14,
           "properties": {
             "Label": "LdIR",
             "Direction": "EAST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.Tunnel",
+          "x": 35,
+          "y": 72,
+          "properties": {
+            "Label": "LdIR",
+            "Direction": "WEST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.Tunnel",
+          "x": 40,
+          "y": 73,
+          "properties": {
+            "Label": "LdPC",
+            "Direction": "WEST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.Tunnel",
+          "x": 40,
+          "y": 75,
+          "properties": {
+            "Label": "DrPC",
+            "Direction": "WEST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.Tunnel",
+          "x": 35,
+          "y": 76,
+          "properties": {
+            "Label": "DrALU",
+            "Direction": "WEST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.Tunnel",
+          "x": 35,
+          "y": 78,
+          "properties": {
+            "Label": "DrREG",
+            "Direction": "WEST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.Tunnel",
+          "x": 40,
+          "y": 77,
+          "properties": {
+            "Label": "DrMEM",
+            "Direction": "WEST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.Tunnel",
+          "x": 35,
+          "y": 74,
+          "properties": {
+            "Label": "DrOFF",
+            "Direction": "WEST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.Tunnel",
+          "x": 26,
+          "y": 54,
+          "properties": {
+            "Label": "Clock",
+            "Direction": "EAST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.Tunnel",
+          "x": 13,
+          "y": 82,
+          "properties": {
+            "Label": "Clock",
+            "Direction": "WEST",
             "Bitsize": "1"
           }
         },
@@ -272,6 +432,16 @@
           }
         },
         {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.ClockPeer",
+          "x": 11,
+          "y": 82,
+          "properties": {
+            "Label location": "NORTH",
+            "Label": "",
+            "Direction": "EAST"
+          }
+        },
+        {
           "name": "com.ra4king.circuitsim.gui.peers.SubcircuitPeer",
           "x": 32,
           "y": 53,
@@ -324,6 +494,26 @@
             "Bit 0": "0",
             "Bit 10": "0",
             "Bit 11": "0"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.Tunnel",
+          "x": 33,
+          "y": 30,
+          "properties": {
+            "Label": "ALUSel",
+            "Direction": "NORTH",
+            "Bitsize": "2"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.Tunnel",
+          "x": 56,
+          "y": 60,
+          "properties": {
+            "Label": "ALUSel",
+            "Direction": "WEST",
+            "Bitsize": "2"
           }
         },
         {
@@ -432,7 +622,7 @@
           "y": 47,
           "properties": {
             "Label location": "EAST",
-            "Label": "DrALU",
+            "Label": "DrREG",
             "Direction": "SOUTH",
             "Bitsize": "32"
           }
@@ -460,6 +650,21 @@
           }
         },
         {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.SplitterPeer",
+          "x": 54,
+          "y": 61,
+          "properties": {
+            "Label location": "NORTH",
+            "Fanouts": "2",
+            "Input location": "Left/Top",
+            "Label": "",
+            "Direction": "WEST",
+            "Bit 1": "1",
+            "Bitsize": "2",
+            "Bit 0": "0"
+          }
+        },
+        {
           "name": "com.ra4king.circuitsim.gui.peers.SubcircuitPeer",
           "x": 49,
           "y": 32,
@@ -467,6 +672,26 @@
             "Label location": "NORTH",
             "Label": "Registers",
             "Subcircuit": "RegFile"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.Tunnel",
+          "x": 35,
+          "y": 64,
+          "properties": {
+            "Label": "RegSelHi",
+            "Direction": "WEST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.Tunnel",
+          "x": 42,
+          "y": 65,
+          "properties": {
+            "Label": "RegSelLo",
+            "Direction": "WEST",
+            "Bitsize": "1"
           }
         }
       ],
@@ -540,12 +765,6 @@
         {
           "x": 21,
           "y": 61,
-          "length": 4,
-          "isHorizontal": true
-        },
-        {
-          "x": 21,
-          "y": 63,
           "length": 4,
           "isHorizontal": true
         },
@@ -634,18 +853,6 @@
           "isHorizontal": true
         },
         {
-          "x": 30,
-          "y": 27,
-          "length": 3,
-          "isHorizontal": false
-        },
-        {
-          "x": 30,
-          "y": 27,
-          "length": 8,
-          "isHorizontal": true
-        },
-        {
           "x": 31,
           "y": 16,
           "length": 9,
@@ -715,6 +922,66 @@
           "x": 35,
           "y": 26,
           "length": 3,
+          "isHorizontal": true
+        },
+        {
+          "x": 36,
+          "y": 27,
+          "length": 2,
+          "isHorizontal": true
+        },
+        {
+          "x": 36,
+          "y": 27,
+          "length": 3,
+          "isHorizontal": false
+        },
+        {
+          "x": 35,
+          "y": 63,
+          "length": 19,
+          "isHorizontal": true
+        },
+        {
+          "x": 35,
+          "y": 64,
+          "length": 19,
+          "isHorizontal": true
+        },
+        {
+          "x": 35,
+          "y": 66,
+          "length": 7,
+          "isHorizontal": true
+        },
+        {
+          "x": 35,
+          "y": 68,
+          "length": 6,
+          "isHorizontal": true
+        },
+        {
+          "x": 35,
+          "y": 70,
+          "length": 4,
+          "isHorizontal": true
+        },
+        {
+          "x": 35,
+          "y": 72,
+          "length": 6,
+          "isHorizontal": true
+        },
+        {
+          "x": 35,
+          "y": 74,
+          "length": 5,
+          "isHorizontal": true
+        },
+        {
+          "x": 35,
+          "y": 78,
+          "length": 5,
           "isHorizontal": true
         },
         {
@@ -4346,6 +4613,18 @@
       "name": "New circuit",
       "components": [
         {
+          "name": "com.ra4king.circuitsim.gui.peers.memory.ROMPeer",
+          "x": 33,
+          "y": 23,
+          "properties": {
+            "Label location": "NORTH",
+            "Contents": "00006201 00001082 00e00900 61-00000000",
+            "Label": "",
+            "Bitsize": "32",
+            "Address bits": "6"
+          }
+        },
+        {
           "name": "com.ra4king.circuitsim.gui.peers.plexers.MultiplexerPeer",
           "x": 38,
           "y": 42,
@@ -4833,22 +5112,34 @@
           "y": 35,
           "properties": {
             "Label location": "EAST",
-            "Label": "",
+            "Label": "DrREG",
             "Is input?": "No",
             "Direction": "WEST",
             "Bitsize": "1"
           }
         },
         {
-          "name": "com.ra4king.circuitsim.gui.peers.memory.ROMPeer",
-          "x": 62,
-          "y": 37,
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.PinPeer",
+          "x": 24,
+          "y": 47,
+          "properties": {
+            "Label location": "WEST",
+            "Label": "Clock",
+            "Is input?": "Yes",
+            "Direction": "EAST",
+            "Bitsize": "1"
+          }
+        },
+        {
+          "name": "com.ra4king.circuitsim.gui.peers.wiring.ConstantPeer",
+          "x": 31,
+          "y": 30,
           "properties": {
             "Label location": "NORTH",
-            "Contents": "16-00",
             "Label": "",
-            "Bitsize": "6",
-            "Address bits": "4"
+            "Value": "1",
+            "Direction": "EAST",
+            "Bitsize": "1"
           }
         },
         {
@@ -4865,14 +5156,14 @@
         },
         {
           "name": "com.ra4king.circuitsim.gui.peers.memory.ROMPeer",
-          "x": 33,
-          "y": 23,
+          "x": 62,
+          "y": 37,
           "properties": {
             "Label location": "NORTH",
-            "Contents": "64-00000000",
+            "Contents": "01 15-00",
             "Label": "",
-            "Bitsize": "32",
-            "Address bits": "6"
+            "Bitsize": "6",
+            "Address bits": "4"
           }
         }
       ],
@@ -4886,13 +5177,37 @@
         {
           "x": 24,
           "y": 25,
-          "length": 20,
+          "length": 18,
           "isHorizontal": false
         },
         {
           "x": 24,
+          "y": 43,
+          "length": 9,
+          "isHorizontal": true
+        },
+        {
+          "x": 26,
+          "y": 41,
+          "length": 4,
+          "isHorizontal": false
+        },
+        {
+          "x": 26,
+          "y": 41,
+          "length": 10,
+          "isHorizontal": true
+        },
+        {
+          "x": 26,
           "y": 45,
-          "length": 5,
+          "length": 3,
+          "isHorizontal": true
+        },
+        {
+          "x": 26,
+          "y": 48,
+          "length": 4,
           "isHorizontal": true
         },
         {
@@ -4902,10 +5217,40 @@
           "isHorizontal": true
         },
         {
+          "x": 30,
+          "y": 47,
+          "length": 1,
+          "isHorizontal": false
+        },
+        {
           "x": 33,
-          "y": 45,
-          "length": 5,
+          "y": 31,
+          "length": 4,
           "isHorizontal": true
+        },
+        {
+          "x": 33,
+          "y": 43,
+          "length": 2,
+          "isHorizontal": false
+        },
+        {
+          "x": 36,
+          "y": 41,
+          "length": 4,
+          "isHorizontal": false
+        },
+        {
+          "x": 36,
+          "y": 45,
+          "length": 2,
+          "isHorizontal": true
+        },
+        {
+          "x": 37,
+          "y": 28,
+          "length": 3,
+          "isHorizontal": false
         },
         {
           "x": 40,
