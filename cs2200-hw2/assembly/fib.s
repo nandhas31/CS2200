@@ -18,11 +18,11 @@ main:
     sw      $t2, 0x00($sp)      ! Increment stack pointer
     addi $sp, $sp, -1
     sw      $ra, 0x00($sp)      ! Save the return address pointer
-    addi $sp, $sp, -1
-    sw      $fp, 0x00($sp)      ! Save the previous frame pointer
+    
     jalr    $ra, $at            ! jump to fib, set $ra to return addr
-    lw      $fp, 0x00($sp)
-    addi    $sp, $sp, 1
+
+
+    
     lw      $ra, 0x00($sp) 
     addi    $sp, $sp, 1
     lw      $t2, 0x00($sp)      ! Save registers 0-2
@@ -37,7 +37,8 @@ Num: .word  2                   ! The number n used for fib(n)
 
 fib:
     
-    
+    addi $sp, $sp, -1
+    sw      $fp, 0x00($sp)      ! Save the previous frame pointer
     
     addi $t1, $a0, -1
     ble $t1, $zero, base                             ! IF (a0 <= 1)
@@ -109,6 +110,8 @@ normalize:
     addi    $v0, $zero, 0
     bge     $zero, $zero, teardown ! teardown the stack
 teardown:
+    lw      $fp, 0x00($sp)
+    addi    $sp, $sp, 1
     jalr    $zero, $ra          ! return to caller
 
 stack: .word 0xFFFF             ! the stack begins here
