@@ -3,7 +3,7 @@
 
         ! vector table
 vector0:
-        .fill 0x0000003B                        ! device ID 0
+        .fill 0x00000000                        ! device ID 0
         .fill 0x00000000                        ! device ID 1
         .fill 0x00000000                        ! ...
         .fill 0x00000000
@@ -13,15 +13,17 @@ vector0:
         .fill 0x00000000                        ! device ID 7
         ! end vector table
 
-main:	lea $t0, timer_handler
+main:	
         lea $sp, initsp                         ! initialize the stack pointer
         lw $sp, 0($sp)                          ! finish initialization
 
                                                 ! TODO FIX ME: Install timer interrupt handler into vector table
-        add $zero, $zero, $zero
+        lea $t0, timer_handler
 
+        sw $t0, 0x00($zero)
                                                 ! TODO FIX ME: Install signal receiver interrupt handler into vector table
-        add $zero, $zero, $zero
+        lea $t0, signal_receiver_handler
+        sw $t0, 0x01($zero)
 
 
         ei                                      ! Enable interrupts
@@ -97,11 +99,12 @@ timer_handler:
         SW $t2, 0x00($sp)
         
         LEA $t0, ticks
+        LW $t0, 0x00($t0)
         LW $t1, 0x00($t0)
         ADDI $t1, $t1, 1
         SW $t1, 0x00($t0)
 
-        LW $t2, 0x00($sp) !Save registers
+        LW $t2, 0x00($sp) !Restore registers
         ADDI $sp, $sp, 1
         LW $t1, 0x00($sp)
         ADDI $sp, $sp, 1
@@ -116,8 +119,36 @@ timer_handler:
         reti			
 
 signal_receiver_handler:
-        reti                                    ! TODO FIX ME
+       ADDI $sp, $sp, -1
+        SW $k0, 0x00($sp) !Save $j0
+        EI 
+        ADDI $sp, $sp, -1
+        SW $t0, 0x00($sp) !Save registers
+        ADDI $sp, $sp, -1
+        SW $t1, 0x00($sp)
+        ADDI $sp, $sp, -1
+        SW $t2, 0x00($sp)
+        
+        IN $t2, 1
+        LEA $t0, signal_received
+        LW $t0, 0x00($t0)
+        LW $t1, 0x00($t0)
+        ADD $t1, $t1, $t2 
+        SW $t1, 0x00($t0)
 
+        LW $t2, 0x00($sp) !Restore registers
+        ADDI $sp, $sp, 1
+        LW $t1, 0x00($sp)
+        ADDI $sp, $sp, 1
+        LW $t0, 0x00($sp)
+        ADDI $sp, $sp, 1
+
+        DI
+        lw $k0, 0($sp)
+        ADDI $sp, $sp, 1
+
+
+        reti			
 
 initsp: .fill 0xA000
 
