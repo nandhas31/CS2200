@@ -1,0 +1,25 @@
+CS 2200 Spring 2018
+Project 4
+
+Name:
+GT Username:
+
+Problem 1B
+There is not a linear relationship. 1 core takes 67 seconds, 2 cores takes 35 seconds, and 4 cores take 33 seconds. This is because even when there are more than enough cores to take the process once they are ready to be executed they still spend time waiting for IO and actual CPU process time. 
+
+/* Fix me */
+
+Problem 2B
+----------
+
+/* Fix me */
+
+Problem 3B
+----------
+
+/* Fix me */
+
+Problem 4
+----------
+
+/* Fix me */
